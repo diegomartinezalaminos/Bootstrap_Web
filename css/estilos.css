@@ -1,159 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    
+}
+
+.textobonito{
+  font-family: 'Acme', sans-serif;
+}
+
+.navbar-color-text {
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    color:#fff;
+    background-image: linear-gradient(45deg, rgb(255, 138, 0), rgb(255, 0, 92));
+    -webkit-text-fill-color: transparent;
+	  -webkit-background-clip: text;
+    color:#fff;
+    /*Pagina - https://entrebits.es/blog/creando-un-texto-con-gradiente*/
+}
+
+.navbar-style {
+    background-color:rgb(34, 34, 34);
+    padding-bottom: 8px;
+}
+
 .carousel-item {
-    height: 65vh;
+    height: 75vh;
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+    border-radius: 5px;
+}
 
-  .logo{
-      max-width: 60px;
-      max-height: 60px;
-      border-radius: 3px;
-  }
-
-  footer{
-      background-color: #242629;
-  }
-
-  .section1{
-      background-color:white;
-  }
-
-  .divfooter{
-      color:white;
-      text-align: center;
-      padding: auto;
-      border: white 1px solid;
-  }
-
-  .imgfooter{
-    height: 150PX;
-    width: 250PX;
-  }
-
-  .boton {
-      width: 250px;
-  }
-
-  /*Formulario_*/
-  :root {
-    --input-padding-x: 1.5rem;
-    --input-padding-y: .75rem;
-  }
-  
-  body {
-    background: #007bff;
-    background: linear-gradient(to right, #0062E6, #33AEFF);
-  }
-  
-  .card-signin {
-    border: 0;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .card-signin .card-title {
-    margin-bottom: 2rem;
-    font-weight: 300;
-    font-size: 1.5rem;
-  }
-  
-  .card-signin .card-img-left {
-    width: 45%;
-    /* Link to your background image using in the property below! */
-    background: scroll center url('../img/logo.png');
+.jumbotron {
+    color: white;
+    background-image: url("../img/staticos.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 50vh;
+    border-radius: 5px;
+  }
+
+.text-heroSection{
+    font-family: 'Acme', sans-serif;
+    color: black;
+}
+
+.borde {
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+    color: rgb(75, 75, 75);
+}
+
+#sobre:hover{
+    color: #fff;
+    transition-duration: 1s;
+}
+
+#cartas-trucos:hover{
+  color: #fff;
+  transition-duration: 1s;
+}
+
+.fondocuadrado {
+    background-color: rgba(75, 75, 75, 0.8);
+    color: #fff;
+    border-radius: 30px;
+}
+
+/*CSS-Footer*/
+/*==================== 
+	Footer 
+====================== */
+
+/* Main Footer */
+footer .main-footer {
+    padding: 20px 0;
+    background: rgb(34, 34, 34);
+  }
+  footer ul {
+    padding-left: 0;
+    list-style: none;
   }
   
-  .card-signin .card-body {
-    padding: 2rem;
+  /* Copy Right Footer */
+  .footer-copyright {
+    background: #222;
+    padding: 5px 0;
+  }
+  .footer-copyright .logo {
+    display: inherit;
+  }
+  .footer-copyright nav {
+    float: right;
+    margin-top: 5px;
+  }
+  .footer-copyright nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-copyright nav ul li {
+    border-left: 1px solid #505050;
+    display: inline-block;
+    line-height: 12px;
+    margin: 0;
+    padding: 0 8px;
+  }
+  .footer-copyright nav ul li a {
+    color: #969696;
+  }
+  .footer-copyright nav ul li:first-child {
+    border: medium none;
+    padding-left: 0;
+  }
+  .footer-copyright p {
+    color: #969696;
+    margin: 2px 0 0;
   }
   
-  .form-signin {
-    width: 100%;
+  /* Footer Top */
+  .footer-top {
+    background: #252525;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #222;
   }
   
-  .form-signin .btn {
-    font-size: 80%;
-    border-radius: 5rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    padding: 1rem;
-    transition: all 0.2s;
+  /* Footer transparent */
+  footer.transparent .footer-top,
+  footer.transparent .main-footer {
+    background: transparent;
+  }
+  footer.transparent .footer-copyright {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
   }
   
-  .form-label-group {
-    position: relative;
-    margin-bottom: 1rem;
+  /* Footer light */
+  footer.light .footer-top {
+    background: #f9f9f9;
+  }
+  footer.light .main-footer {
+    background: #f9f9f9;
+  }
+  footer.light .footer-copyright {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
   }
   
-  .form-label-group input {
-    height: auto;
-    border-radius: 2rem;
+  /* Footer 4 */
+  .footer- .logo {
+    display: inline-block;
   }
   
-  .form-label-group>input,
-  .form-label-group>label {
-    padding: var(--input-padding-y) var(--input-padding-x);
+  /*==================== 
+      Widgets 
+  ====================== */
+  .widget {
+    padding: 20px;
+    margin-bottom: 40px;
   }
-  
-  .form-label-group>label {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .widget.widget-last {
+    margin-bottom: 0px;
+  }
+  .widget.no-box {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 40px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+  }
+  .widget.subscribe p {
+    margin-bottom: 18px;
+  }
+  .widget li a {
+    color: #ff8d1e;
+  }
+  .widget li a:hover {
+    color: #4b92dc;
+  }
+  .widget-title {
+    margin-bottom: 20px;
+  }
+  .widget-title span {
+    background: #839fad none repeat scroll 0 0;
     display: block;
-    width: 100%;
-    margin-bottom: 0;
-    /* Override default `<label>` margin */
-    line-height: 1.5;
-    color: #495057;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    transition: all .1s ease-in-out;
+    height: 1px;
+    margin-top: 25px;
+    position: relative;
+    width: 20%;
+  }
+  .widget-title span::after {
+    background: inherit;
+    content: "";
+    height: inherit;
+    position: absolute;
+    top: -4px;
+    width: 50%;
+  }
+  .widget-title.text-center span,
+  .widget-title.text-center span::after {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .widget .badge {
+    float: right;
+    background: #7f7f7f;
   }
   
-  .form-label-group input::-webkit-input-placeholder {
-    color: transparent;
+  .typo-light h1,
+  .typo-light h2,
+  .typo-light h3,
+  .typo-light h4,
+  .typo-light h5,
+  .typo-light h6,
+  .typo-light p,
+  .typo-light div,
+  .typo-light span,
+  .typo-light small {
+    color: #fff;
   }
   
-  .form-label-group input:-ms-input-placeholder {
-    color: transparent;
+  ul.social-footer2 {
+    margin: 0;
+    padding: 0;
+    width: auto;
   }
-  
-  .form-label-group input::-ms-input-placeholder {
-    color: transparent;
+  ul.social-footer2 li {
+    display: inline-block;
+    padding: 0;
   }
-  
-  .form-label-group input::-moz-placeholder {
-    color: transparent;
+  ul.social-footer2 li a:hover {
+    background-color: #ff8d1e;
   }
-  
-  .form-label-group input::placeholder {
-    color: transparent;
+  ul.social-footer2 li a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
   }
-  
-  .form-label-group input:not(:placeholder-shown) {
-    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
-    padding-bottom: calc(var(--input-padding-y) / 3);
-  }
-  
-  .form-label-group input:not(:placeholder-shown)~label {
-    padding-top: calc(var(--input-padding-y) / 3);
-    padding-bottom: calc(var(--input-padding-y) / 3);
-    font-size: 12px;
-    color: #777;
-  }
-  
-  .btn-google {
-    color: white;
-    background-color: #ea4335;
-  }
-  
-  .btn-facebook {
-    color: white;
-    background-color: #3b5998;
-  }
+
+/*-------------Inicio-Modal-Login-------------*/
+
+#login-modal .modal-dialog {
+    width: 350px;
+}
+
+#login-modal input[type=text], input[type=password] {
+	margin-top: 10px;
+}
+
+#div-login-msg,
+#div-lost-msg,
+#div-register-msg {
+    border: 1px solid #dadfe1;
+    height: 30px;
+    line-height: 28px;
+    transition: all ease-in-out 500ms;
+}
+
+#div-login-msg.success,
+#div-lost-msg.success,
+#div-register-msg.success {
+    border: 1px solid #68c3a3;
+    background-color: #c8f7c5;
+}
+
+#div-login-msg.error,
+#div-lost-msg.error,
+#div-register-msg.error {
+    border: 1px solid #eb575b;
+    background-color: #ffcad1;
+}
+
+#icon-login-msg,
+#icon-lost-msg,
+#icon-register-msg {
+    width: 30px;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+    background-color: #dadfe1;
+    margin-right: 5px;
+    transition: all ease-in-out 500ms;
+}
+
+#icon-login-msg.success,
+#icon-lost-msg.success,
+#icon-register-msg.success {
+    background-color: #68c3a3 !important;
+}
+
+#icon-login-msg.error,
+#icon-lost-msg.error,
+#icon-register-msg.error {
+    background-color: #eb575b !important;
+}
+
+#img_logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+/* #########################################
+   #    override the bootstrap configs     #
+   ######################################### */
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .8;
+}
+
+.modal-content {
+    background-color: #ececec;
+    border: 1px solid #bdc3c7;
+    border-radius: 0px;
+    outline: 0;
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 0px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+}
+
+.modal-footer {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border-top: 0px;
+}
+
+.checkbox {
+    margin-bottom: 0px;
+}
+
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.btn-link {
+    padding: 5px 10px 0px 0px;
+    color: #95a5a6;
+}
+
+.glyphicon {
+    top: 0px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+/*-------------Fin-Modal-Login----------------*/  
+
+
+
+
+
+

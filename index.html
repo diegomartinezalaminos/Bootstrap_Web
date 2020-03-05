@@ -4,14 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Bootstrap_CSS-->
+    <title>Street_Work_out</title>
+    <!--Bootstrap-CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/imagehover.min.css">
-    <!--Fontello_CSS-->
-    <link rel="stylesheet" href="css/fontello.css">
-    <!--Bootstrap_JS-->
+    <!--Bootstrap-JS-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -21,86 +18,114 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!--MyCSS-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <!--Fontawesome-CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Propio-CSS-->
     <link rel="stylesheet" href="css/estilos.css">
-    <!--MyJS-->
-
+    <!--Propio-JS-->
+    <script src="js/js.js"></script>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
 <body>
-    <!-- Navigation_Menú -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <!--<li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">¿QUIÉNES SOMOS?</a>
-                    </li>
-                    <!--Desplegables-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            ENSAYOS REGISTRADOS
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">DECLARACION RESPONSABLE</a>
-                            <a class="dropdown-item" href="#">INCLINOMETRÍA</a>
-                            <a class="dropdown-item" href="#">PENETRÓMETRO</a>
-                            <a class="dropdown-item" href="#">PRESIÓMETROS MENARD</a>
-                            <a class="dropdown-item" href="#">PRESIÓMETROS OYO</a>
-                        </div>
-                    </li>
+    <!--Inicio-Menu-->
+    <header id="inicio">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-style">
+            <!--fixed-top-->
+            <div class="container">
+                <a class="navbar-brand navbar-color-text" href="#inicio">Calistenia</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent " aria-expanded="false"
+                    aria-label="Toggle navigation ">
+                    <span class="navbar-toggler-icon" style="color: #ff8d1e;"><i class="fa fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse px-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto navbar-color-text">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trucos">Trucos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rutina">Crea tu rutina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <button class="btn btn-outline-success my-2 my-sm-0 navbar-color-text" type="submit"
+                            data-toggle="modal" data-target="#login-modal">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Final-Menu-->
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            ASISTENCIA GEOTÉCNICA
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#1-1">ASISTENCIA GEOTÉCNICA EN OBRA</a>
-                            <a class="dropdown-item" href="#1-2">ESTUDIO DE PATOLOGÍAS</a>
-                            <a class="dropdown-item" href="#1-3">ESTUDIOS DE RIESGOS GEOTÉCNICOS</a>
-                            <a class="dropdown-item" href="#1-4">ESTUDIOS GEOTÉCNICOS Y CARTOGRAFÍA</a>
-                        </div>
-                    </li>
+        <!--Inicio-Modal-Login-->
+        <!-- BEGIN # MODAL LOGIN -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: rgb(22, 22, 22);">
+                    <div class="modal-header" align="center">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </button>
+                    </div>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            AUSCULTACIÓN
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">CUERDA VIBRANTE</a>
-                            <a class="dropdown-item" href="#">INCLINOMETRÍA</a>
-                        </div>
-                    </li>
+                    <!-- Begin # DIV Form -->
+                    <div id="div-forms">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            SÍSMICA
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">MASW</a>
-                            <a class="dropdown-item" href="#">REFRACCIÓN</a>
-                        </div>
-                    </li>
-                    <!--Fin Desplegables-->
-                </ul>
+                        <!-- Begin # Login Form -->
+                        <form id="login-form ">
+                            <div class="modal-body">
+                                <div id="div-login-msg">
+                                    <span id="text-login-msg navbar-color-text" class="navbar-color-text">Ponga su
+                                        usuario y contraseña.</span>
+                                </div>
+                                <input id="login_username" class="form-control navbar-color-text" type="text"
+                                    placeholder="Username" required>
+                                <input id="login_password" class="form-control navbar-color-text" type="password"
+                                    placeholder="Password" required>
+                                <div class="checkbox">
+                                    <label class="navbar-color-text">
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div>
+                                    <button type="submit"
+                                        class=" navbar-color-text btn btn-primary btn-lg btn-block">Login</button>
+                                </div>
+                                <div>
+                                    <button id="login_lost_btn" type="button"
+                                        class="btn btn-link textobonito navbar-color-text">Lost
+                                        Password?</button>
+                                    <button id="login_register_btn" type="button"
+                                        class="btn btn-link textobonito navbar-color-text">Register</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End # Login Form -->
+                    </div>
+                    <!-- End # DIV Form -->
+                </div>
             </div>
         </div>
-    </nav>
-    <!--Final_Navigation_Menú -->
+        <!-- END # MODAL LOGIN -->
+        <!--Fin-Modal-Login-->
 
-    <!--Carrusel-->
-    <header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!--Inicio-Carrusel-->
+        <div id="carouselExampleIndicators" class="carousel slide py-5" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -108,13 +133,13 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('img/galeria03.jpg')">
+                <div class="carousel-item active" style="background-image: url('img/dinamicos.jpg')">
                 </div>
                 <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('img/galeria01.jpg')">
+                <div class="carousel-item" style="background-image: url('img/staticospino.jpg')">
                 </div>
                 <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('img/galeria02.jpg')">
+                <div class="carousel-item" style="background-image: url('img/dinamicos02.jpg')">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -126,287 +151,315 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </header><br><br>
+    </header>
     <!--Fin de carrusel-->
 
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Portfolio Item Heading -->
-        <!-- Portfolio Item Row -->
-        <div class="row">
-
-            <div class="col-xl-7 py-5">
-                <img class="img-fluid" src="img/logo.png" alt="">
-                <!--750x500-->
-            </div>
-
-            <div class="col-xl-5 py-5">
-                <h3 class="my-3">¿Qué es lo que hacemos?</h3>
-                <p>
-                    Asistencia Geotécnica e Instrumentación – AGI - es una iniciativa de profesionales con unaamplia
-                    experiencia en el ámbito de la consultoría geotécnica, que surge con el ánimo de dar un servicio de
-                    asistencia técnica
-                    en ingeniería del terreno a profesionales y empresas relacionadas con la obra civil y arquitectura.
-                </p>
-                <p>
-                    El espíritu de la empresa es responder pormenorizadamente a las necesidades e interrogantes que
-                    plantea
-                    la interacción
-                    entre el terreno y las estructuras en el medio físico natural. Para ello AGI cuenta con la amplia
-                    experiencia de sus técnicos
-                    desarrollada por más de 20 años en el campo de la consultoría geotécnica, desde el ámbito la
-                    asistencia
-                    técnica a pie de obra
-                    y laboratorio geotécnico.<br>
-                    Como buenos conocedores del terreno y de las técnicas de investigación, nuestros expertos ofrecen
-                    las
-                    prospecciones
-                    y ensayos necesarios dentro de la normativa vigente, para dar las soluciones óptimas entre la
-                    adecuación
-                    técnica al proyecto,
-                    viabilidad de ejecución y economía.
-                </p>
-            </div>
-
-        </div>
-    </div>
-    <section class="section1">
-        <!-- Page Content -->
-        <div class="container py-5">
-            <!-- Page Heading -->
-            <h1 class="my-4">Asistencia Geotécnica:</h1>
+    <!--Inicio-Introduccion-->
+    <section class="py-5" id="sobre">
+        <div class="container borde px-5">
             <div class="row">
-                <div class="col-lg-6 col-sm-6 mb-4" id="1-1">
-                    <div class="card h-100">
-                        <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
-                        <figure class="imghvr-flip-diag-1">
-                            <img src="img/asistenciageotecnicaenobra.JPG" alt="">
-                            <figcaption>
-                                <h4 style="text-align: center;">ASISTENCIA Y ASESORAMIENTO GEOTÉCNICO EN OBRA</h4>
-                            </figcaption>
-                            <a href=""></a>
-                        </figure>
-                        <div class="card-body">
-                            <p class="card-title">
-                                <a href="#"><strong> ASISTENCIA Y ASESORAMIENTO GEOTÉCNICO EN OBRA:</strong></a>
-                            </p>
-                            <p class="card-text">
-                                Análisis de la información geotécnica previa y comprobación
-                                en fase de ejecución, y planteamiento de la campaña y técnicas
-                                geotécnicas de investigación complementarias.<br>
-
-                                Valoración de estabilidad de frentes de excavación
-                                y medidas de estabilización o contención.<br>
-
-                                Evaluación geotécnica de las condiciones de cimentación.
-                            </p>
-                        </div>
-                    </div>
+                <div class="col-xl-7 py-5">
+                    <img class="img-fluid" src="img/sobre.jpg" alt="" style="border-radius: 20px;">
+                    <!--750x500-->
                 </div>
-                <div class="col-lg-6 col-sm-6 mb-4" id="1-2">
-                    <div class="card h-100">
-                        <figure class="imghvr-flip-diag-1">
-                            <img src="img/estudiodepatoligias.jpg" alt="">
-                            <figcaption>
-                                <h4 style="text-align: center;">ESTUDIO DE PATOLOGÍAS</h4>
-                            </figcaption>
-                            <a href=""></a>
-                        </figure>
-                        <div class="card-body">
-                            <p class="card-title">
-                                <a href="#"><strong>PERITAJE:</strong></a>
-                            </p>
-                            <p class="card-text">
-                                Estudios sobre patología de cimentación y asentamientos en la edificación y viales.<br>
-                                Estudios sobre estabilidad de taludes en suelo y roca.<br>
-                                Estudios de filtraciones de agua.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 mb-4" id="1-3">
-                    <div class="card h-100">
-                        <figure class="imghvr-flip-diag-1">
-                            <img src="img/estudiosderiesgosgeotecnicos.jpg" alt="">
-                            <figcaption>
-                                <h4 style="text-align: center;">ESTUDIOS DE RIESGOS GEOTÉCNICOS</h4>
-                            </figcaption>
-                            <a href="#"></a>
-                        </figure>
-                        <div class="card-body">
-                            <p class="card-title">
-                                <a href="#"><strong>ESTUDIOS DE RIESGOS GEOTÉCNICOS:</strong></a>
-                            </p>
-                            <p class="card-text">
-                                Valoración de los riesgos geotécnicos (deslizamiento de terrenos, desprendimientos,
-                                subsidencia, asientos, expasividad, riesgo sísmico…)
-                                para recalificación y ordenación de urbana.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 mb-4" id="1-4">
-                    <div class="card h-100">
-                        <figure class="imghvr-flip-diag-1">
-                            <img src="img/estudiosgeotecnicosycartografia.jpg" alt="">
-                            <figcaption>
-                                <h4 style="text-align: center;">ESTUDIOS GEOTÉCNICOS Y CARTOGRAFÍA</h4>
-                            </figcaption>
-                            <a href="#"></a>
-                        </figure>
-                        <div class="card-body">
-                            <p class="card-title">
-                                <a href="#">
-                                    <strong>ESTUDIOS GEOTÉCNICOS PARA EDIFICACIÓN Y OBRA PÚBLICA:</strong>
-                                </a>
-                            </p>
-                            <p class="card-text">
-                                Realizamos informe geotécnicos para edificación según el Código
-                                Técnico de la Edificación (Seguridad Estructural y Cimientos)<br>
 
-                                Geotecnia de Obra Civil desde las fases de planificación de la campaña
-                                de investigación, ejecución y/o supervisión de los trabajos de campo
-                                y laboratorio, así como la interpretación y redacción de anejos geológicos y
-                                geotécnicos.
-                            </p>
+                <div class="col-xl-5 py-5" id="sobre">
+                    <h3 class="my-3">¿Qué es la calistenia?</h3>
+                    <p>
+                        La calistenia es un sistema de ejercicios físicos con el propio peso corporal.
+                        En este sistema, el interés está en los movimientos de grupos musculares grandes.<br><br>
+                        El objetivo es la adquisición de fuerza y belleza en el ejercicio.
+                        Es la belleza que tiene el cuerpo en movimiento.
+                    </p>
+                    Los ejercicios realizados en calistenia se dividen en básicos (ejercicios comunes para el
+                    fortalecimiento de los músculos y tendones),
+                    estáticos (ejercicios avanzados que consisten en mantener una misma posición por algún periodo de
+                    tiempo,
+                    estos requieren mucha fuerza muscular y en tendones)
+                    y dinámicos (ejercicios avanzados que consisten en el movimiento, se utilizan en "freestyle",
+                    aparte de fuerza requieren gran agilidad y reflejos).
+                    <p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Fin-Introduccion-->
+    <!--Inicio-HeroSection-->
+    <section class="py-5" id="trucos">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="row d-none d-md-block">
+                <div class="container pl-5">
+                    <div class="col-8 pl-3">
+                        <div class="fondocuadrado py-2">
+                            <h3 class="display-4 text-heroSection pl-3">Trucos de tensión y free</h3>
+                            <h5 class="text-heroSection px-4">En esta disciplina se practican numerosos trucos tanto de
+                                fuerza (tensión)
+                                como de free (acrobacias)</h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- /.row -->
+            <div class="container fondocuadrado">
+            </div>
         </div>
-        <!-- /.container -->
     </section>
-    <!--Login-->
-    <section id="hablanos">
+    <!--Final-HeroSection-->
+
+    <!--Inicio-Cartas-->
+    <section class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-xl-9 mx-auto">
-                    <div class="card card-signin flex-row my-5">
-                        <div class="card-img-left d-none d-md-flex">
-                            <!-- Background image for card set in CSS! -->
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Háblenos</h5>
-                            <form class="form-signin">
-                                <div class="form-label-group">
-                                    <input type="text" id="inputUserame" class="form-control" placeholder="Username"
-                                        required>
-                                    <label for="inputUserame">Usuario</label>
-                                </div>
+            <div class="row justify-content-lg-center pb-5">
 
-                                <div class="form-label-group">
-                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
-                                        required>
-                                    <label for="inputEmail">Dirección de email</label>
-                                </div>
-                                <div class="form-group">
-                                    <label>Sexo</label>
-                                    <select>
-                                        <option>Masculino</option>
-                                        <option>Femenino</option>
-                                        <option>Sin especificar</option>
-                                    </select>
-                                </div>
-                                <hr>
-                                <div class="form-group">
-                                    <textarea name="txtMsg" class="form-control" placeholder="Escriba *"
-                                        style="width: 100%; height: 150px;"></textarea>
-                                </div>
-                                <hr>
-                                <div class="custom-control custom-checkbox mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">
-                                        Declaro que he leído y acepto la política de privacidad
-                                    </label>
-                                </div>
-                                <button class="btn btn-lg btn-primary btn-block text-uppercase"
-                                    type="submit">Enviar</button>
-                            </form>
-                        </div>
+                <div class="col-lg-3 borde px-5 py-5 textobonito ml-3">
+                    <img src="img/pino.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" id="cartas-trucos">
+                        <h5 class="card-title">HandStand o Pino</h5>
+                        <p class="card-text">Es un ejercicio estático, que necestida de equilibrio
+                            y fuerza en hombros, trapecio, abdominales y muñecas. Tiene una dificultad Media.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 borde px-5 py-5 textobonito ml-3">
+                    <img src="img/bandera.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" id="cartas-trucos">
+                        <h5 class="card-title">HumanFlag o Bandera Humana</h5>
+                        <p class="card-text">Es un ejercicio estático, que necesita de mucha fuerza en hombros,
+                            dorsales, abdominales, trapecio y serrato. Tiene una dificultad Alta.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 borde px-5 py-5 textobonito ml-3">
+                    <img src="img/backlever.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" id="cartas-trucos">
+                        <h5 class="card-title">BackLever</h5>
+                        <p class="card-text">Es un ejercicio estatico, que requieres tener los tendones
+                            y articulaciones del hombro fuertes a demas de flexibilidad en el hombro. Tiene una
+                            dificultada media</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Footer-->
-    <footer class="">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 py-5 divfooter">
-                    <img src="img/logo.png" class="imgfooter"><br>
-                    <!--Button trigger modal-->
-                    <button type="button" class="btn btn-primary boton" data-toggle="modal"
-                        data-target="#exampleModalScrollable">
-                        <a href="#hablanos" style="color: white;text-decoration: none;">
-                            ____HÁBLANOS____
-                        </a>
-                    </button>
+    <!--Fin-Cartas-->
 
-                    <!--Modal-->
-                    <!--<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form class="form-signin">
-                                        <div class="form-label-group">
-                                            <input type="text" id="inputUserame" class="form-control"
-                                                placeholder="Username" required>
-                                            <label for="inputUserame">Usuario</label>
-                                        </div>
-
-                                        <div class="form-label-group">
-                                            <input type="email" id="inputEmail" class="form-control"
-                                                placeholder="Email address" required>
-                                            <label for="inputEmail">Dirección de email</label>
-                                        </div>
-                                        <hr>
-                                        <div class="form-group">
-                                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
-                                                style="width: 100%; height: 150px;"></textarea>
-                                        </div>
-                                        <hr>
-                                        <div class="custom-control custom-checkbox mb-3">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">Remember
-                                                password</label>
-                                        </div>
-                                        <button class="btn btn-lg btn-primary btn-block text-uppercase"
-                                            type="submit">Enviar</button>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
+    <!--Inicio-CreaTurutina (formulario mas foto)-->
+    <section class="py-5" id="rutina">
+        <div class="container borde px-5 py-5 textobonito">
+            <div class="row" style="color: #fff;">
+                <div class="col-lg-6">
+                    <form action="" method="GET">
+                        <!--Inicio-Gmail-->
+                        <div class="form-group">
+                            <label for="EmailUsuario">Correo Electronico:</label>
+                            <input type="email" class="form-control" id="EmailUsuario"
+                                placeholder="Introduzca el Correo Electronico:">
+                        </div>
+                        <!--Final-Gmail-->
+                        <!--Inicio-Contrasenia-->
+                        <div class="form-group">
+                            <label for="ContraseniaUsuario">Contraseña: </label>
+                            <input type="password" class="form-control" id="ContraseniaUsuario"
+                                placeholder="Introduzca la contraseña:">
+                        </div>
+                        <!--Final-Contrasenia-->
+                        <!--Inicio-NombreRutina-->
+                        <div class="form-group">
+                            <label for="NomRutina">Nombre-Rutina</label>
+                            <input type="text" class="form-control" id="NomRutina" placeholder="Nombre de la rutina">
+                        </div>
+                        <!--Final-NombreRutina-->
+                        <!--Inicio-Intensidad-->
+                        <div class="form-group">
+                            <label class="pr-2">Intensidad: </label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Intensidad" id="IntensidadBajaId"
+                                    value="Baja">
+                                <label class="form-check-label" for="IntensidadBajaId">Baja</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Intensidad" id="IntensidadMediaId"
+                                    value="Media">
+                                <label class="form-check-label" for="IntensidadMediaId">Media</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Intensidad" id="IntensidadAltaId"
+                                    value="Alta">
+                                <label class="form-check-label" for="IntensidadAltaId">Alta</label>
                             </div>
                         </div>
-                    </div>-->
+                        <!--Final-Intensidad-->
+                        <!--Inicio-Ejercicios-->
+                        <div class="form-group">
+                            <label for="Ejercicio">Ejercicios: </label>
+                            <select class="selectpicker pl-2" id="Ejercicios" multiple>
+                                <option name="Flexiones">Flexiones</option>
+                                <option name="Handstand">Handstand</option>
+                                <option name="Sentadillas">Sentadillas</option>
+                                <option name="Dominadas">Dominadas</option>
+                            </select>
+                        </div>
+                        <!--Final-Ejercicios-->
+                        <!--Inicio-Descripcion-->
+                        <div class="form-group">
+                            <label for="DescripcionId">Descripcion</label>
+                            <textarea class="form-control" id="DescripcionId" rows="3"></textarea>
+                        </div>
+                        <!--Final-Descripcion-->
+                        <!--Inicio-Politica-Privacidad-->
+                        <div class="form-group form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="Politicas" id="PoliticasId"
+                                value="Alta">
+                            <label class="form-check-label" for="PoliticasId">Al marcar la casilla acepto las <a
+                                    href="" data-toggle="modal" data-target="#exampleModalLong">politicas de privacidad</a></label>
+                        </div>
+                        <!--Fin-Politica-Privacidad-->
+                        <!--Inicio-Boton-->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary navbar-color-text">Crear Rutina</button>
+                        </div>
+                        <!--Final-Boton-->
+                    </form>
                 </div>
-                <div class="col-lg-4 py-5 divfooter">
-                    <h4>REDES SOCIALES:</h4>
-                    <p><a href="#" class="icon-instagram">Instagram</a></p>
-                    <p><a href="#" class="icon-mail">Mail</a></p>
-                    <p><a href="#" class="icon-facebook">Facebook</a></p>
-                    <p><a href="#" class="icon-linkedin">Linkedin</a></p>
+                <div class="col-lg-6 d-none d-md-block">
+                    <img class="img-fluid" src="img/staticos.jpg" alt="" style="border-radius: 20px;">
                 </div>
-                <div class="col-lg-4 py-5 divfooter">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.0359604148207!2d-4.487895485206359!3d36.721697579815476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f0c97b1ca1a9%3A0x1caa64d5532c16dc!2sCalle%20Esquilo%2C%201%2C%2029010%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1582483215121!5m2!1ses!2ses"
-                        width="" height="" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </section>
+    <!--Final-CreaTurutina (formulario mas foto)-->
+    <!--Politica de privacidad-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Políticas de privacidad</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                            La presente Política de Privacidad y Protección de Datos forma parte integrante de las Condiciones de Uso de la página web www.cta-consultores.com (en adelante “el Portal”).<br><br>
+
+                            Finalidad del tratamiento de Datos Personales:
+                                Para acceder a determinadas funcionalidades del Portal, como recibir información o solicitar alguna consulta legal es necesario que nos facilite sus datos personales y así beneficiarse de todas las prerrogativas como Usuario registrado. Al incluir de forma voluntaria dicha información nos garantiza que los datos que nos proporciona responden a su verdadera identidad y que son actuales y completos en el momento en que nos los proporciona.<br><br>
+                                En cumplimiento de lo dispuesto en la normativa vigente en materia de protección de datos, CalisteniaES, con domicilio social en Zaragoza -50006 calle Fray Luis Amigó 8, Oficinas D y E, le informa que los datos personales facilitados voluntariamente por usted a través de esta página web, serán tratados con la máxima confidencialidad por CTA Consultores Técnicos Asociados S.A, en calidad de Responsable del Tratamiento, con el fin de gestionar la relación con sus clientes y promocionar las actividades del Despacho o solicitar alguna consulta legal.<br><br>
+                        
+                            Legitimación para el uso de sus datos personales:<br><br>
+                                Los datos personales son facilitados voluntariamente por el Usuario a través del formulario web de contacto, por lo que contamos con su consentimiento para su tratamiento.<br><br>
+                                El Usuario garantiza que sus datos personales aportados son verdaderos, exactos, completos y actualizados, siendo el Usuario el único responsable de cualquier daño o perjuicio, directo o indirecto, que pudiera ocasionarse como consecuencia del incumplimiento de tal obligación.<br><br>
+                                En el caso de que los datos aportados por un Usuario pertenecieran a un tercero distinto de quien facilita los datos, el Usuario deberá informar al tercero de los aspectos contenidos en esta Política de Privacidad y obtener su autorización para facilitar sus datos a CalisteniaES<br><br>
+                        
+                            Sus datos personales no se cederán a terceros, salvo imperativo legal.<br><br>
+                        
+                            Derechos del interesado en el tratamiento de sus datos personales:<br><br>
+                        
+                        El Usuario tiene reconocidos los derechos de acceso, rectificación, cancelación y oposición (A.R.C.O.) así como los derechos a la portabilidad, oposición y limitación de sus datos personales, los cuales podrá ejercitar dirigiendo una comunicación por correo electrónico a la dirección de CalisteniaES info@cta-consultores.com o bien mediante carta dirigida a nuestras oficinas sitas en Zaragoza -50006 calle Fray Luis Amigó 8, Oficinas D y E.<br><br>
+                        
+                            CalisteniaES adopta los niveles y medidas de seguridad requeridos por la normativa aplicable en materia de protección de datos. No obstante, lo anterior, la seguridad técnica en un medio como Internet no es inexpugnable y pueden existir filtraciones por actuaciones dolosas de terceros.<br><br>
+                        
+                            Información sobre cookies:<br><br>
+                        
+                        CalisteniaES podrá utilizar cookies durante la prestación del servicio del Portal. Las cookies son procedimientos automáticos de recogida de información relativa a las preferencias determinadas por un usuario durante su visita a una determinada página web. Esta información se registra en pequeños archivos que son guardados en los equipos informáticos del usuario correspondiente de forma imperceptible. Cada vez que el usuario vuelve a acceder al sitio web en cuestión, estos archivos se activan automáticamente de manera que se configura el sitio web con las preferencias señaladas en anteriores visitas. En definitiva, las cookies son ficheros físicos de información personal alojados en el propio terminal del usuario y asociados inequívocamente a este terminal. Las cookies no pueden leer los archivos cookie creados por otros proveedores.<br><br>
+                        
+                        El Usuario tiene la posibilidad de configurar su programa navegador de manera que se impida la creación de archivos cookie o se advierta del momento en que esto ocurre. El Portal es accesible sin necesidad de que estén activadas las opciones referentes a los archivos cookie, si bien pueden impedir el correcto funcionamiento de mecanismos de seguridad para servicios exclusivos o determinados servicios que requieren de una mayor seguridad. Por norma general, la finalidad de los archivos cookie del Portal es la de facilitar la navegación del Usuario.<br><br>
+                        
+                        Para más información sobre cookies, lea nuestra Política de Cookies.<br><br>
+                        
+                            La presente Política de Privacidad y Protección de Datos podrá variar con el tiempo debido a los posibles cambios legislativos, jurisprudenciales o de los criterios seguidos por la Agencia Española de Protección de Datos y/o la autoridad competente en cada momento. Es por ello que CalisteniaES se reserva el derecho a modificar la presente Política de Privacidad para adaptarla a novedades legislativas y/o jurisprudenciales que se encuentran vigentes en el momento preciso en que se accede al Portal.<br><br>
+                        
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary navbar-color-text" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin-Politica de privacidad-->
+    <!--Inicio-Footer-->
+    <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title">Calistenia<span></span></h5>
+                            <p>Aprende sobre nuestro deporte y anímate a probarlo</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Mapa<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="thumb-content navbar-color-text"><a href="#inicio">Inicio</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content navbar-color-text"><a href="#sobre">Sobre la
+                                            calistenia</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content navbar-color-text"><a href="#trucos">Trucos</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content navbar-color-text"><a href="#rutina">Rutinas</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content navbar-color-text"><a href="#contacto">Contacto</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Encuentranos<span></span></h5>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.687943654325!2d-4.434773284361458!3d36.706035980693585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f78416af814d%3A0xf03d279a3233400!2sParque%20de%20Huelin!5e0!3m2!1ses!2ses!4v1583338256833!5m2!1ses!2ses"
+                                width="200" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+
+                        <div class="widget no-box">
+                            <h5 class="widget-title" id="contacto">Contacto<span></span></h5>
+
+                            <p class="navbar-color-text"><a href="mailto:info@domain.com"
+                                    title="glorythemes">calistenia@gmail.com</a></p>
+                            <ul class="social-footer2">
+                                <li class=""><a title="youtube" target="_blank" href="https://www.youtube.com/"><img
+                                            alt="youtube" width="30" height="30"
+                                            src="data:image/png;base64,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"></a>
+                                </li>
+                                <li class=""><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img
+                                            alt="Facebook" width="30" height="30"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAtAGAnf+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJV2ZIALC3AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4mbI8uSQ5RYFbCC1xB1dXLh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHgg/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk5NhKxEJbYcpXff5nwl/AV/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd0yLESWK5WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQWHTA4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAARKCBKrBBG/TBGCzABhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv1EAdNMBRaIaTcA4uwlW4Dj1wD/phCJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5h1xGupE7yAAygvyGvEcxlIGyUT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+Q8cwwOgYBzPEbDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhMWE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPENyQSiUMyJ7mQAkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD5DPkG+Qh8lsKnWJAcaT4U+IoUspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2htlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdpr+h0uhHdlR5Ol9BX0svpR+iX6AP0dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZD5lvVVgqtip8FZHKCpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61MbU2epO6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN2Xx2KruY/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIpG6Y0TLkxZVxrqpaXllirSKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3nU9lT3acKpxZNPTr1ri6qa6UbobtEd79up+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6VhlWGX4YSRudE8o9VGjUYPjGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1mz0x1zLnm+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cRp7lOk06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0HDYfZDqsdWh1+c7RyFDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dnF2e5c4PziIuJS4LLLpc+Lpsbxt3IveRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofcn8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+BZ7XnIy9jL5FXrdewt6V3qvdh7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJgUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5pDoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/RNtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWFfevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTPZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJzs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3vdy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtbYlu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ752PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9DBY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfyl5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAAX1JREFUeNrs1jFrFFEQB/DfeWpCMFVMkaQIsRG1SWORb6DGKkUgpE6qJNiIH0YQFAtFUFKnEC1iY6XBq64SixCwkEvIEXNjM8ISBPe8W6/IDQzLezM7/7fzZv6ztYgwCLlgQDIw4Is9vDuJe5jHKDoI7GC7KuAxbOAu2gl6iimMVAU8htcJ9AANtHCCLdyvKtWbWRt3CnvXcAu3y9ZNt8B1LOFhYe8R1rGXWXhVKlJEdKNzEbEbERO5vh4RzYi42WWcrttpFMc4LKS4gS9VtNMyFvPuZhK8nbYjLOB5rtt4ivd/C1orQZk7WbEv8qANfEjblTzUePqs4WNWe89fHHiHZ3+wtfCysJ7PAuwLZX7L/vycupusBTfwqWBbwdd+3fEmJtL3Et7gKg4wm/e8mr4n2O8XcCv1t/zI9Euq/I5m1dPpMmr9mHDnbx4PgctK58zzvwDXC+xUL8tUvc7jn6mPs3+nyzJVr8AdPElO7iSdvv0X4Nrwh34IXJX8GgCPbKxZUJtpYgAAAABJRU5ErkJggg=="></a>
+                                </li>
+                                <li class=""><a href="https://twitter.com" target="_blank" title="Twitter"><img
+                                            alt="Twitter" width="30" height="30"
+                                            src="data:image/png;base64,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"></a>
+                                </li>
+                                <li class=""><a title="instagram" target="_blank" href="https://www.instagram.com/"><img
+                                            alt="instagram" width="30" height="30"
+                                            src="data:image/png;base64,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"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </footer>
-    <!--Fin_Footer-->
+    <!--Fin-Footer-->
 </body>
 
 </html>
